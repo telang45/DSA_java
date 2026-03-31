@@ -1,19 +1,23 @@
+import java.util.*;
 public class array8 {
-    public static boolean display(int arr[]){
-        boolean check=true;
-         for(int i=0;i<arr.length-1;i++){
-             if(arr[i]>arr[i+1]){
-                 check=false;
-             }
-         }
-         return check;
+    public static boolean display(int[] arr){
+        boolean check = true;
+        for(int i = 0; i < arr.length-1; i++){
+            if(arr[i] > arr[i+1]){
+                check = false;
+            }
+        }
+        return check;
     }
-    public static void main(String[] args) {
-        int arr[]={10,20,30,40,50};
-      if(display(arr)==true){
-          System.out.println("array is sorted");
-      }else{
-          System.out.println("array is unsorted");
-      }
-    }
+        public static void main(String[] args){
+            int[] arr = {10,20,30,40,50,60};
+            if(display(arr) == true){
+                System.out.println("array is sorted");
+            }
+            else{
+                System.out.println("array is not sorted");
+            }
+        }
+    
 }
+    
