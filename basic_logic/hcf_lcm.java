@@ -1,0 +1,22 @@
+public class hcf_lcm {
+     public static void main(String[] args) {
+
+        int a = 12;
+        int b = 18;
+
+        int x = a;
+        int y = b;
+
+        while (y != 0) {
+            int rem = x % y;
+            x = y;
+            y = rem;
+        }
+
+        int gcd = x;
+        int lcm = (a * b) / gcd;
+
+        System.out.println("GCD = " + gcd);
+        System.out.println("LCM = " + lcm);
+    }
+}
